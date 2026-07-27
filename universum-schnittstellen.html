@@ -10,18 +10,18 @@
   body {
     font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
     color: var(--ink);
-    line-height: 1.7;
-    font-size: 19px;
-    max-width: 720px;
+    line-height: 1.65;
+    font-size: 17px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 40px 22px 96px;
     background: #fff;
   }
-  .back { font-size: .9rem; }
+  .back { font-size: .85rem; }
   .back a { color: var(--link); text-decoration: none; }
-  h1 { font-size: 1.95rem; line-height: 1.2; margin: .8em 0 .1em; }
-  .subtitle { color: var(--muted); font-size: 1.1rem; font-style: italic; margin-top: 0; }
-  h2 { font-size: 1.2rem; margin: 2.2em 0 .5em; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: .8em 0 .1em; }
+  .subtitle { color: var(--muted); font-size: 1.02rem; font-style: italic; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin: 2.1em 0 .5em; }
   blockquote {
     margin: 1.1em 0;
     padding: .2em 0 .2em 1.1em;
@@ -38,12 +38,12 @@
     border: 1px solid var(--rule);
     border-radius: 8px;
     padding: 16px 20px;
-    font-size: .95rem;
+    font-size: .92rem;
     color: #3d444d;
     line-height: 1.6;
   }
   .note-title { font-weight: bold; display: block; margin-bottom: .4em; color: var(--ink); }
-  footer { margin-top: 3em; color: var(--muted); font-size: .85rem; }
+  footer { margin-top: 3em; color: var(--muted); font-size: .82rem; }
 </style>
 <script>
   window.MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$','$$']] } };
@@ -70,12 +70,20 @@ zugänglich?</p>
 <p>Normalerweise behandelt die Physik diese beiden Fragen getrennt. Die erste
 gehört zur Quantengravitation oder Kosmologie, die zweite zur Beobachtung und
 Datenanalyse.</p>
-<p>Die hier entwickelte Sichtweise versucht stattdessen, beide Ebenen durch einen
-gemeinsamen Begriff miteinander zu verbinden: den Begriff der Schnittstelle
-(Interface). Vorweg sei betont, was dieser Text <em>nicht</em> ist: keine neue
-Quantentheorie und keine neue Kosmologie. Es geht um eine Interpretation dessen,
-was in beiden Theorien bereits vorhanden ist — um die Frage, welche Teile der
-vollständigen Quantendynamik überhaupt zu beobachtbaren Strukturen werden.</p>
+<p>Die hier entwickelte Sichtweise versucht, beide Ebenen durch einen gemeinsamen
+Begriff zu verbinden: den Begriff der Schnittstelle (Interface). Sie tut das
+nicht, indem sie eine neue Theorie aufstellt, sondern anhand von
+<em>Spielzeugmodellen</em> — bewusst stark vereinfachten, aber exakt
+durchrechenbaren Modellfällen. Ein solches Modell beschreibt nicht das wirkliche
+Universum in seiner ganzen Komplexität; es isoliert einen einzelnen Mechanismus
+und macht ihn so einfach, dass man ihn vollständig verstehen kann. Sein
+Wahrheitsgehalt liegt nicht darin, die Welt korrekt abzubilden, sondern darin,
+einen allgemeinen Zusammenhang in einem kontrollierten Fall sichtbar zu machen.</p>
+<p>Vorweg sei deshalb betont, was dieser Text <em>nicht</em> ist: keine neue
+Quantentheorie und keine neue Kosmologie. Es geht um Gedankenexperimente
+innerhalb der bestehenden Physik — um die Frage, welche Teile der vollständigen
+Quantendynamik überhaupt zu beobachtbaren Strukturen werden, und um einfache
+Modellfälle, an denen sich diese Frage sauber stellen und beantworten lässt.</p>
 <p>Eine Schnittstelle ist dabei nicht einfach ein Beobachter oder ein Messgerät.
 Sie bezeichnet allgemein jene physikalischen Strukturen, an denen Informationen
 stabil werden und dauerhaft verfügbar bleiben. Erst an solchen Stellen wird aus
@@ -83,12 +91,11 @@ der vollständigen Quantendynamik eine beobachtbare Wirklichkeit.</p>
 
 <h2>Das eigentliche Problem</h2>
 <p>Die Quantenmechanik beschreibt die Welt durch einen vollständigen
-Quantenzustand.</p>
-<p>Für ein kleines Laborexperiment ist das unproblematisch: Man betrachtet ein
-Teilchen, ein Messgerät und einen Beobachter.</p>
-<p>Für das gesamte Universum funktioniert dieses Bild jedoch nicht mehr.</p>
-<p>Es gibt keinen äußeren Beobachter. Es gibt niemanden außerhalb des Universums,
-der dessen Wellenfunktion messen könnte.</p>
+Quantenzustand. Für ein kleines Laborexperiment ist das unproblematisch: Man
+betrachtet ein Teilchen, ein Messgerät und einen Beobachter. Für das gesamte
+Universum funktioniert dieses Bild jedoch nicht mehr, denn es gibt keinen
+äußeren Beobachter — niemanden außerhalb des Universums, der dessen
+Wellenfunktion messen könnte.</p>
 <p>Damit stellt sich eine grundlegende Frage:</p>
 <blockquote>Welche Teile eines universellen Quantenzustandes werden überhaupt
 empirisch wirksam?</blockquote>
@@ -103,162 +110,143 @@ entscheidend und wird im Folgenden konsequent durchgehalten. Der Zustand als
 Ganzes mag weit mehr enthalten, als je an irgendeiner Schnittstelle erscheint.</p>
 
 <h2>Was ist eine Schnittstelle?</h2>
-<p>Frühere Versionen dieser Arbeit definierten eine Schnittstelle hauptsächlich
-über ihre physikalischen Eigenschaften:</p>
-<ul>
-  <li>welche Freiheitsgrade erreichbar sind,</li>
-  <li>welche Informationen gespeichert werden,</li>
-  <li>welche Größen durch Dekohärenz stabil geworden sind.</li>
-</ul>
-<p>Diese Beschreibung war praktisch, beantwortete aber eine tiefere Frage nicht:
-Warum gerade diese Größen?</p>
-<p>Die neue Version geht deshalb einen Schritt weiter.</p>
-<p>Eine Schnittstelle wird nun nicht mehr primär über die beobachtbaren Größen
-definiert, sondern über ihre Antwort auf physikalische Störungen.</p>
-<p>Der Grundgedanke lautet: Eine physikalische Struktur wird genau dann zu einer
-Schnittstelle, wenn sie auf relevante Änderungen der Gesamtphysik stabil und
-reproduzierbar reagiert.</p>
-<p>Die Schnittstelle ist also nicht der Ausgangspunkt. Sie ist vielmehr ein
-Ergebnis der Dynamik.</p>
+<p>Frühere Versionen dieser Überlegungen definierten eine Schnittstelle
+hauptsächlich über ihre physikalischen Eigenschaften: darüber, welche
+Freiheitsgrade erreichbar sind, welche Informationen gespeichert werden und
+welche Größen durch Dekohärenz stabil geworden sind. Diese Beschreibung war
+praktisch, ließ aber eine tiefere Frage offen — nämlich warum gerade diese
+Größen und nicht andere.</p>
+<p>Die neue Fassung geht deshalb einen Schritt weiter und definiert eine
+Schnittstelle nicht mehr primär über die beobachtbaren Größen, sondern über ihre
+Antwort auf physikalische Störungen. Der Grundgedanke ist einfach: Eine
+physikalische Struktur wird genau dann zu einer Schnittstelle, wenn sie auf
+relevante Änderungen der Gesamtphysik stabil und reproduzierbar reagiert. Die
+Schnittstelle ist damit nicht mehr der Ausgangspunkt, sondern ein Ergebnis der
+Dynamik.</p>
 
 <h2>Antwort statt Beobachtung</h2>
-<p>Man kann sich dies an einem einfachen Beispiel vorstellen.</p>
-<p>Ein Blatt Papier reagiert auf Licht. Ein Stein ebenfalls. Doch nur ein
-fotografischer Film reagiert auf Licht so, dass die Information dauerhaft erhalten
-bleibt. Er besitzt also eine stabile Antwort auf eine physikalische Anregung.</p>
-<p>Genau dieses Prinzip wird verallgemeinert.</p>
-<p>Nicht jede Wechselwirkung erzeugt eine Schnittstelle. Nur diejenigen
-physikalischen Freiheitsgrade, deren Antwort dauerhaft stabil bleibt, bilden
-später beobachtbare Daten.</p>
-<p>Beobachtbare Wirklichkeit entsteht daher nicht einfach durch Wechselwirkung,
-sondern durch stabile Antwortstrukturen.</p>
+<p>Man kann sich das an einem einfachen Beispiel vorstellen. Ein Blatt Papier
+reagiert auf Licht, ein Stein ebenso; doch nur ein fotografischer Film reagiert
+auf Licht so, dass die Information dauerhaft erhalten bleibt. Er besitzt also
+eine stabile Antwort auf eine physikalische Anregung.</p>
+<p>Genau dieses Prinzip wird verallgemeinert. Nicht jede Wechselwirkung erzeugt
+eine Schnittstelle; nur diejenigen physikalischen Freiheitsgrade, deren Antwort
+dauerhaft stabil bleibt, bilden später beobachtbare Daten. Beobachtbare
+Wirklichkeit entsteht daher nicht einfach durch Wechselwirkung, sondern durch
+stabile Antwortstrukturen.</p>
 
 <h2>Das kosmologische Beispiel</h2>
-<p>Dieses Verständnis lässt sich besonders gut am frühen Universum illustrieren.</p>
-<p>Während der Inflation entstehen winzige Quantenschwankungen. Jede dieser
-Schwankungen besitzt zwei unabhängige Bestandteile. Vereinfacht gesprochen:</p>
-<ul>
-  <li>einen wachsenden Anteil,</li>
-  <li>einen abklingenden Anteil.</li>
-</ul>
-<p>Anfangs sind beide gleichberechtigt.</p>
-<p>Doch während sich das Universum ausdehnt, geschieht etwas Entscheidendes. Die
-abklingende Komponente verschwindet zunehmend. Die wachsende Komponente bleibt
-erhalten.</p>
-<p>Dadurch reagiert das Universum am Ende fast ausschließlich auf diese eine
-Richtung im Zustandsraum. Genau diese Richtung erscheint später als klassische
-Dichteschwankung im Mikrowellenhintergrund.</p>
+<p>Dieses Verständnis lässt sich besonders gut am frühen Universum illustrieren.
+Während der Inflation entstehen winzige Quantenschwankungen, und jede von ihnen
+besitzt zwei unabhängige Bestandteile — vereinfacht gesprochen einen wachsenden
+und einen abklingenden Anteil. Anfangs sind beide gleichberechtigt.</p>
+<p>Doch während sich das Universum ausdehnt, geschieht etwas Entscheidendes: Die
+abklingende Komponente verschwindet zunehmend, die wachsende bleibt erhalten.
+Dadurch reagiert das Universum am Ende fast ausschließlich auf diese eine
+Richtung im Zustandsraum, und genau diese Richtung erscheint später als
+klassische Dichteschwankung im Mikrowellenhintergrund.</p>
 <p>Mit anderen Worten: Die heute beobachtbaren Strukturen wurden nicht von außen
-ausgewählt. Sie haben sich dynamisch als diejenigen Freiheitsgrade herausgebildet,
-deren Antwort stabil geblieben ist.</p>
+ausgewählt. Sie haben sich dynamisch als diejenigen Freiheitsgrade
+herausgebildet, deren Antwort stabil geblieben ist.</p>
 
 <h2>Warum der Horizont wichtig ist</h2>
-<p>Dabei spielt der kosmologische Horizont eine besondere Rolle.</p>
-<p>In der traditionellen Darstellung trennt der Horizont einfach beobachtbare von
-unbeobachtbaren Bereichen. Die hier vorgeschlagene Lesart ist subtiler.</p>
-<p>Innerhalb des Horizonts schwingen die Quantenmoden ständig zwischen
-verschiedenen Zustandsrichtungen. Nach dem Verlassen des Horizonts frieren sie
-praktisch ein. Erst dort entsteht eine stabile Antwortstruktur.</p>
-<p>Der Horizont markiert also nicht bloß eine geometrische Grenze. Er kennzeichnet
-einen Übergang von instabilen zu dauerhaft reproduzierbaren physikalischen
-Antworten.</p>
-<p>Dadurch wird verständlicher, warum gerade bestimmte Informationen zu späteren
-Beobachtungsdaten werden.</p>
+<p>Dabei spielt der kosmologische Horizont eine besondere Rolle. In der
+traditionellen Darstellung trennt er einfach beobachtbare von unbeobachtbaren
+Bereichen; die hier vorgeschlagene Lesart ist subtiler. Innerhalb des Horizonts
+schwingen die Quantenmoden ständig zwischen verschiedenen Zustandsrichtungen,
+nach dem Verlassen des Horizonts frieren sie praktisch ein — und erst dort
+entsteht eine stabile Antwortstruktur.</p>
+<p>Der Horizont markiert also nicht bloß eine geometrische Grenze. Er
+kennzeichnet einen Übergang von instabilen zu dauerhaft reproduzierbaren
+physikalischen Antworten. Dadurch wird verständlicher, warum gerade bestimmte
+Informationen zu späteren Beobachtungsdaten werden.</p>
 
 <h2>Welche Information wird unzugänglich?</h2>
 <p>Die vollständige Quantenbeschreibung enthält mehr Information als jede reale
-Beobachtung.</p>
-<p>Beispielsweise besitzt jede kosmologische Mode sowohl Amplituden- als auch
-Phaseninformation. Gemessen werden später praktisch nur die Amplituden.</p>
-<p>Früher wurde dieser Unterschied als strikte Trennung beschrieben: Die Amplituden
+Beobachtung. Jede kosmologische Mode etwa besitzt sowohl Amplituden- als auch
+Phaseninformation, gemessen werden später aber praktisch nur die Amplituden.
+Früher wurde dieser Unterschied als strikte Trennung beschrieben: Die Amplituden
 gehören zur Schnittstelle, die Phasen bleiben vollständig verborgen.</p>
-<p>Die neue Sichtweise ist feiner. Die Phasen verschwinden nicht. Ihre Antwort auf
-spätere Beobachtungen wird lediglich extrem klein. Sie gehören deshalb zu den
-<em>antwortunterdrückten</em> Richtungen: Prinzipiell existieren sie weiterhin,
-praktisch tragen sie aber kaum noch zu den später verfügbaren Daten bei.</p>
-<p>Dadurch entsteht eine kontinuierliche statt einer absoluten Trennung zwischen
-zugänglicher und unzugänglicher Information. Und diese Unzugänglichkeit ist meist
-relativ — zur Auflösung, zur jeweiligen Schnittstelle, zur verfügbaren Datenmenge
-— und nicht ein absolutes Vernichten von Information. Eine echte Ausnahme bildet
-nur der Fall, in dem Information hinter einem Horizont verschwindet und dadurch
-kausal unerreichbar wird.</p>
+<p>Die neue Sichtweise ist feiner. Die Phasen verschwinden nicht; ihre Antwort
+auf spätere Beobachtungen wird lediglich extrem klein. Sie gehören deshalb zu
+den <em>antwortunterdrückten</em> Richtungen: Prinzipiell existieren sie
+weiterhin, praktisch tragen sie aber kaum noch zu den später verfügbaren Daten
+bei. So entsteht eine kontinuierliche statt einer absoluten Trennung zwischen
+zugänglicher und unzugänglicher Information.</p>
+<p>Diese Unzugänglichkeit ist zudem meist relativ — zur Auflösung, zur
+jeweiligen Schnittstelle, zur verfügbaren Datenmenge — und nicht ein absolutes
+Vernichten von Information. Eine echte Ausnahme bildet nur der Fall, in dem
+Information hinter einem Horizont verschwindet und dadurch kausal unerreichbar
+wird.</p>
 
 <h2>Was bedeutet Wirklichkeit?</h2>
-<p>Hier liegt wahrscheinlich die wichtigste begriffliche Konsequenz.</p>
-<p>Die Arbeit behauptet nicht, dass die Welt erst durch Beobachter entsteht. Ebenso
-wenig behauptet sie, dass nur gemessene Dinge existieren.</p>
-<p>Vielmehr lautet die Aussage: Die <em>beobachtbare</em> physikalische Wirklichkeit
-besteht aus denjenigen Strukturen, die sich innerhalb der tatsächlichen Dynamik
-des Universums als stabile Antwortsektoren herausbilden.</p>
+<p>Hier liegt wahrscheinlich die wichtigste begriffliche Konsequenz. Die
+Überlegung behauptet nicht, dass die Welt erst durch Beobachter entsteht, und
+ebenso wenig, dass nur gemessene Dinge existieren. Vielmehr lautet die Aussage:
+Die <em>beobachtbare</em> physikalische Wirklichkeit besteht aus denjenigen
+Strukturen, die sich innerhalb der tatsächlichen Dynamik des Universums als
+stabile Antwortsektoren herausbilden.</p>
 <p>Diese Antwortsektoren bilden später unsere beobachtbare Welt. Die zugrunde
-liegende Quantendynamik kann wesentlich reichhaltiger sein. Doch nicht jede ihrer
-mathematischen Eigenschaften wird jemals physikalisch wirksam.</p>
+liegende Quantendynamik kann wesentlich reichhaltiger sein — doch nicht jede
+ihrer mathematischen Eigenschaften wird jemals physikalisch wirksam.</p>
 
 <h2>Warum dies eine relationale Sichtweise ist</h2>
-<p>Diese Auffassung ist in einem wichtigen Sinn relational.</p>
-<p>Welche Freiheitsgrade stabil und damit beobachtbar werden, hängt nicht allein
-vom lokalen Objekt ab. Vielmehr entscheidet die gesamte kosmische Entwicklung
-darüber,</p>
-<ul>
-  <li>welche Freiheitsgrade stabil werden,</li>
-  <li>welche Information erhalten bleibt,</li>
-  <li>welche Größen später überhaupt beobachtbar sind.</li>
-</ul>
-<p>Nicht das lokale Objekt allein bestimmt, welche seiner Eigenschaften beobachtbar
-werden. Die globale Dynamik wählt aus, welche lokalen Strukturen dauerhaft Bestand
-haben.</p>
-<p>In diesem — bewusst begrenzten — Sinn erhält die Beschreibung einen machianischen
-Zug: Das Ganze bestimmt mit, welche seiner Teile zu stabilen, beobachtbaren
-Strukturen werden. Es geht dabei um <em>Auswahl</em>, nicht darum, dass das Ganze
-seinen Teilen Bedeutung verleiht.</p>
+<p>Diese Auffassung ist in einem wichtigen Sinn relational. Welche Freiheitsgrade
+stabil und damit beobachtbar werden, hängt nicht allein vom lokalen Objekt ab,
+sondern wird von der gesamten kosmischen Entwicklung mitbestimmt: davon, welche
+Freiheitsgrade stabil werden, welche Information erhalten bleibt und welche
+Größen später überhaupt beobachtbar sind.</p>
+<p>Nicht das lokale Objekt allein bestimmt also, welche seiner Eigenschaften
+beobachtbar werden; die globale Dynamik wählt aus, welche lokalen Strukturen
+dauerhaft Bestand haben. In diesem — bewusst begrenzten — Sinn erhält die
+Beschreibung einen machianischen Zug: Das Ganze bestimmt mit, welche seiner
+Teile zu stabilen, beobachtbaren Strukturen werden. Es geht dabei um
+<em>Auswahl</em>, nicht darum, dass das Ganze seinen Teilen Bedeutung verleiht.</p>
 
-<h2>Was aus der früheren Theorie geworden ist</h2>
-<p>Eine frühere Idee dieser Forschungsrichtung war die sogenannte
-„Bedeutungsmigration“. Sie sollte erklären, wie Unterschiede zwischen verschiedenen
-kosmologischen Anfangszuständen im Laufe der Zeit in beobachtbare Daten übergehen —
-so, als würde eine erhaltene Größe vom Ganzen in die Schnittstellen
-<em>wandern</em>.</p>
-<p>Bei genauerer Prüfung zeigte sich, dass gerade dieses Bild einer wandernden,
-erhaltenen Größe mathematisch nicht trägt: Das entsprechende Maß für
-Unterscheidbarkeit lässt sich nicht als saubere Bilanz aus einem „schon sichtbaren“
-und einem „noch verborgenen“ Anteil zerlegen.</p>
-<p>Was bestehen bleibt, ist die schwächere, aber tragfähige Aussage: Bestimmte
-Unterschiede werden für eine gegebene Schnittstelle mit der Zeit zunehmend
-<em>zugänglich</em>. Es ist nicht nötig — und nicht haltbar — anzunehmen, dass eine
-abstrakte „Bedeutung“ durch das Universum wandert. Die eigentliche Dynamik betrifft
-die Ausbildung stabiler Antwortstrukturen. Der Verzicht auf das stärkere Bild macht
-den theoretischen Aufbau einfacher und zugleich ehrlicher.</p>
+<h2>Was aus einer früheren Idee geworden ist</h2>
+<p>Eine frühere Idee dieser Überlegungen war die sogenannte „Bedeutungsmigration“.
+Sie sollte erklären, wie Unterschiede zwischen verschiedenen kosmologischen
+Anfangszuständen im Laufe der Zeit in beobachtbare Daten übergehen — so, als
+würde eine erhaltene Größe vom Ganzen in die Schnittstellen <em>wandern</em>.</p>
+<p>Bei genauerer Prüfung zeigte sich jedoch, dass gerade dieses Bild einer
+wandernden, erhaltenen Größe mathematisch nicht trägt: Das entsprechende Maß für
+Unterscheidbarkeit lässt sich nicht als saubere Bilanz aus einem „schon
+sichtbaren“ und einem „noch verborgenen“ Anteil zerlegen. Was bleibt, ist die
+schwächere, aber tragfähige Aussage, dass bestimmte Unterschiede für eine
+gegebene Schnittstelle mit der Zeit zunehmend <em>zugänglich</em> werden. Es ist
+nicht nötig — und nicht haltbar — anzunehmen, dass eine abstrakte „Bedeutung“
+durch das Universum wandert; die eigentliche Dynamik betrifft die Ausbildung
+stabiler Antwortstrukturen. Der Verzicht auf das stärkere Bild macht den
+gedanklichen Aufbau einfacher und zugleich ehrlicher.</p>
 
-<h2>Die neue Gesamtarchitektur</h2>
-<p>Aus dieser Entwicklung ergibt sich eine klarere Gesamtstruktur.</p>
-<p>Am Anfang steht die vollständige Quantendynamik des Universums. Aus ihr entstehen
-durch Wechselwirkungen bestimmte stabile Antwortsektoren. Diese Antwortsektoren
-bilden physikalische Schnittstellen. Erst diese Schnittstellen erzeugen dauerhaft
-verfügbare Aufzeichnungen. Und erst aus diesen Aufzeichnungen entsteht schließlich
-die empirisch zugängliche Wirklichkeit.</p>
+<h2>Die Gesamtarchitektur</h2>
+<p>Aus dieser Entwicklung ergibt sich eine klarere Gesamtstruktur. Am Anfang
+steht die vollständige Quantendynamik des Universums. Aus ihr entstehen durch
+Wechselwirkungen bestimmte stabile Antwortsektoren; diese bilden physikalische
+Schnittstellen; erst die Schnittstellen erzeugen dauerhaft verfügbare
+Aufzeichnungen; und erst aus diesen Aufzeichnungen entsteht schließlich die
+empirisch zugängliche Wirklichkeit.</p>
 <p>Die Reihenfolge lautet daher:</p>
 <blockquote>globale Quantendynamik → stabile Antwortstrukturen → physikalische
 Schnittstellen → dauerhafte Aufzeichnungen → beobachtbare Wirklichkeit</blockquote>
-<p>Diese Reihenfolge ersetzt die frühere Vorstellung, Beobachter oder Messungen
-seien die grundlegenden Bausteine der Physik.</p>
+<p>Sie ersetzt die Vorstellung, Beobachter oder Messungen seien die grundlegenden
+Bausteine der Physik.</p>
 
 <h2>Ausblick</h2>
-<p>Die hier entwickelte Sichtweise liefert keine neue Quantentheorie und keine neue
-Kosmologie. Sie schlägt vielmehr eine andere Interpretation dessen vor, was in
-beiden Theorien bereits vorhanden ist. Sie arbeitet damit innerhalb der etablierten
-Physik der Dekohärenz und Rekordbildung, nicht gegen sie.</p>
-<p>Der zentrale Gedanke lautet: Nicht jede mathematische Struktur eines
-Quantenzustandes wird automatisch physikalisch wirksam. Beobachtbar werden
-diejenigen Teile der Dynamik, die sich selbst als stabile Antwortstrukturen
-organisieren.</p>
+<p>Die hier entwickelte Sichtweise liefert keine neue Quantentheorie und keine
+neue Kosmologie. Sie arbeitet mit einfachen Modellfällen innerhalb der
+etablierten Physik der Dekohärenz und Rekordbildung, nicht gegen sie. Der
+zentrale Gedanke lautet: Nicht jede mathematische Struktur eines Quantenzustandes
+wird automatisch physikalisch wirksam; beobachtbar werden diejenigen Teile der
+Dynamik, die sich selbst als stabile Antwortstrukturen organisieren.</p>
 <p>Damit verschiebt sich die Frage von</p>
 <blockquote>„Welche Wellenfunktion beschreibt das Universum?“</blockquote>
 <p>zu der genaueren Frage</p>
 <blockquote>„Welche Teile dieser Wellenfunktion können durch die Dynamik des
 Universums überhaupt jemals zu stabilen Bestandteilen einer beobachtbaren
 Wirklichkeit werden?“</blockquote>
-<p>Gerade diese Verschiebung der Fragestellung könnte den eigentlichen begrifflichen
-Beitrag dieser Arbeiten darstellen. Sie ersetzt weder die etablierte Physik noch
+<p>Gerade diese Verschiebung der Fragestellung könnte den eigentlichen
+begrifflichen Beitrag darstellen. Sie ersetzt weder die etablierte Physik noch
 ihre mathematischen Werkzeuge, sondern bietet einen genaueren Blick darauf, warum
 aus der vollständigen Quantendynamik gerade jene Welt hervorgeht, die wir
 tatsächlich beobachten.</p>
@@ -267,11 +255,12 @@ tatsächlich beobachten.</p>
 
 <div class="note">
 <span class="note-title">Was hier nicht behauptet wird</span>
-Nicht behauptet wird, dass die Welt erst durch Beobachter oder Messungen entsteht;
-dass nur Gemessenes existiert; oder dass eine abstrakte „Bedeutung“ durch das
-Universum wandert. Der Zustand als Ganzes darf als real gelten — die Aussage
-betrifft allein, welche seiner Anteile <em>beobachtbar</em> werden. Es handelt sich
-um eine Interpretation innerhalb der etablierten Physik, nicht um eine neue Theorie.
+Nicht behauptet wird, dass die Welt erst durch Beobachter oder Messungen
+entsteht; dass nur Gemessenes existiert; oder dass eine abstrakte „Bedeutung“
+durch das Universum wandert. Der Zustand als Ganzes darf als real gelten — die
+Aussage betrifft allein, welche seiner Anteile <em>beobachtbar</em> werden. Es
+handelt sich um Gedankenexperimente und einfache Modellfälle innerhalb der
+bestehenden Physik, nicht um eine neue Theorie.
 </div>
 
 <p class="back" style="margin-top:2.5em"><a href="index.html">&larr; Zurück zur Übersicht</a></p>
