@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A plain-language account of interface-relative observability, extension fibers, response selection, and cosmological proposal audits.">
+<title>Which differences are observable?</title>
+<style>
+  :root { --ink:#1f2328; --muted:#57606a; --link:#2a5599; --rule:#e6e8eb; --note:#f6f8fa; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    color: var(--ink);
+    line-height: 1.68;
+    font-size: 17px;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 22px 96px;
+    background: #fff;
+  }
+  .back, .essay-nav { font-size: .86rem; }
+  .back a, .essay-nav a { color: var(--link); text-decoration: none; }
+  h1 { font-size: 1.8rem; line-height: 1.2; margin: .8em 0 .12em; }
+  .subtitle { color: var(--muted); font-size: 1.03rem; font-style: italic; margin-top: 0; }
+  h2 { font-size: 1.12rem; margin: 2.15em 0 .55em; }
+  h3 { font-size: 1rem; margin: 1.7em 0 .45em; }
+  a { color: var(--link); }
+  blockquote {
+    margin: 1.15em 0;
+    padding: .25em 0 .25em 1.1em;
+    border-left: 3px solid var(--rule);
+    color: #2f363d;
+    font-style: italic;
+  }
+  ul, ol { padding-left: 1.35em; }
+  li { margin: .5em 0; }
+  em { font-style: italic; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+  .equation { overflow-x: auto; margin: 1.1em 0; text-align: center; }
+  .note {
+    background: var(--note);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 15px 19px;
+    margin: 1.4em 0;
+    font-size: .93rem;
+    color: #3d444d;
+    line-height: 1.62;
+  }
+  .note-title { font-weight: bold; display: block; margin-bottom: .35em; color: var(--ink); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5em 0; }
+  footer { margin-top: 3em; color: var(--muted); font-size: .83rem; }
+</style>
+<script>
+  window.MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$','$$']] } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<p class="back"><a href="index.html">&larr; Back to overview</a></p>
+
+<h1>Which differences are observable?</h1>
+<p class="subtitle">What a realized interface preserves, suppresses, or leaves undetermined about a global quantum state</p>
+
+<h2>The global state is not an internal data set</h2>
+
+<p>Quantum cosmology assigns a state, wavefunctional, or related object to the universe as a whole. Such a state can contain amplitudes, phases, correlations, and weights for different semiclassical histories. An observer inside the universe does not receive this global object directly. Empirical information arrives through physical records and observables supported by a realized interface.</p>
+
+<p>Let $\mathcal A$ be a global algebra and $\mathcal A_I\subseteq\mathcal A$ the algebra available at an interface $I$. A global state $\omega$ supplies the interface state simply by restriction:</p>
+
+<div class="equation">$$\omega_I=\omega|_{\mathcal A_I}.$$</div>
+
+<p>This innocent-looking map is generally many-to-one. Distinct global states can agree on every observable in $\mathcal A_I$. The set of all compatible global extensions is the <em>extension fiber</em>:</p>
+
+<div class="equation">$$
+\operatorname{Ext}_I(\omega_I)=
+\left\{\widetilde\omega:\widetilde\omega|_{\mathcal A_I}=\omega_I\right\}.
+$$</div>
+
+<p>This extension fiber is conceptually different from the split-realization fiber in the previous essay: there the freedom concerned possible interface realizations; here it concerns possible global states. Two states in the same extension fiber are indistinguishable at that interface. They need not be the same physical state, and the framework does not declare their difference unreal. They may differ in correlations, phases, environmental configurations, or relational structure outside the realized algebra. The correct conclusion is only that the present interface does not resolve the difference.</p>
+
+<h2>The interface algebra should be physically selected</h2>
+
+<p>An arbitrary list of quantities that an analyst chooses to inspect is not yet a physical interface. In the semiclassical setting of document 60, the algebra is selected by <em>response</em>: which physically allowed perturbations continue to produce stable, reproducible changes in observable variables?</p>
+
+<p>One may represent the linearized response by a map from physical perturbation directions to variations of candidate records. Its singular directions identify strongly visible, weakly visible, and invisible combinations. A response-selected interface is one whose dominant response sector is persistent over the relevant interval, robust under small changes of background or coupling, and approximately closed against leakage into competing sectors.</p>
+
+<p>This makes observability dynamical. A variable is not empirical merely because it appears in the global wavefunction. It becomes interface data when the cosmological evolution and record-forming interactions couple that variable, or some combination of variables, into a stable response channel.</p>
+
+<h2>Monotonicity: more records can only refine</h2>
+
+<p>If one interface algebra is enlarged by adding compatible records, its extension fiber can shrink but cannot grow. Any global state that agrees with the richer data automatically agrees with the poorer data. Thus additional observations may split an equivalence class that was previously unresolved, but they cannot merge states that were already distinguished.</p>
+
+<p>This gives a clean meaning to experimental progress. A more capable interface need not reveal the entire global state. It does, however, reduce the family of global representatives compatible with what has been recorded.</p>
+
+<h2>The saturation criterion</h2>
+
+<p>Suppose a family of global proposals is labelled by a parameter $x$, while the realized observables depend on it only through a map $F(x)$. If $F$ is constant on a region $U$, then the interface is blind to how the proposals distribute their weight inside $U$.</p>
+
+<blockquote>Where every realized observable is saturated—constant across a range of global possibilities—differences within that range have no present empirical representative.</blockquote>
+
+<p>The proposals can still differ dramatically as global objects. But to distinguish them one must enlarge the interface with an observable whose induced map is nonconstant on that range. This is not a statement about ignorance or limited computing power. It is a statement about the information actually preserved by the physical restriction channel.</p>
+
+<h2>A worked cosmological sandbox: amplitude and phase</h2>
+
+<p>The Gaussian model in document 60 makes the abstract point concrete. For each cosmological perturbation mode, take an amplitude $\zeta_k$ and its conjugate momentum $p_k$. Linear evolution carries their initial values to a late record time. The stable late observable is generally a response-selected quadrature</p>
+
+<div class="equation">$$Q_k^{\rm resp}=\zeta_k+\varepsilon_k p_k.$$</div>
+
+<p>For super-Hubble modes, the growing solution approaches a constant while the decaying solution is suppressed. The response therefore becomes approximately rank one: $|\varepsilon_k|\ll1$. In the ideal strong-squeezing limit, $\varepsilon_k\to0$, the interface algebra is generated by functions of the amplitudes $\zeta_k$ alone.</p>
+
+<p>Consider a Gaussian wavefunction</p>
+
+<div class="equation">$$
+\Psi_\Omega(\zeta)=N\exp\!\left[-\frac12\sum_k
+(\Omega_{R,k}+i\Omega_{I,k})\zeta_k^2\right].
+$$</div>
+
+<p>The exact amplitude algebra fixes the probability distribution $|\Psi(\zeta)|^2$, and therefore fixes $\Omega_{R,k}$. It does not fix the phase functional, represented here by $\Omega_{I,k}$. All changes of phase that leave the modulus unchanged lie in the extension fiber of the amplitude record.</p>
+
+<p>At finite squeezing the distinction is graded rather than absolute. Since the actual record is $Q_k^{\rm resp}=\zeta_k+\varepsilon_kp_k$, its variance contains terms proportional to $\varepsilon_k\Omega_{I,k}$. Phase and decaying-mode data are therefore not categorically absent whenever $\varepsilon_k\neq0$; their influence is merely parametrically small and may fall below the realized resolution.</p>
+
+<div class="note">
+<span class="note-title">Why this matters</span>
+The interface does not divide variables once and for all into “real” and “unreal.” It grades their empirical accessibility. Some directions dominate stable records, some survive weakly, and some vanish only in an asymptotic limit.
+</div>
+
+<h2>Presently invisible is not permanently meaningless</h2>
+
+<p>Because interfaces form and evolve, an extension direction can have several dynamical statuses:</p>
+
+<ul>
+  <li><em>not currently accessible:</em> the present interface is blind, but a later admissible interface may record the difference;</li>
+  <li><em>partially retained:</em> the interface distinguishes the states, but with less than the globally optimal discrimination power;</li>
+  <li><em>fully sufficient:</em> the interface preserves enough information to recover the relevant proposal family;</li>
+  <li><em>dynamically stranded:</em> no physically realized interface ever couples to the distinction;</li>
+  <li><em>representationally redundant:</em> the difference disappears after gauge, phase convention, or other required quotienting.</li>
+</ul>
+
+<p>This taxonomy prevents two opposite mistakes. Present inaccessibility should not automatically be turned into nonexistence. Conversely, a mathematical distinction in a chosen representation should not automatically be treated as physical.</p>
+
+<h2>Distinguishability and sufficiency</h2>
+
+<p>For a pair of candidate states, the trace distance measures their best possible single-measurement distinguishability. A physical interface is a quantum channel, and channels cannot increase trace distance. They can preserve the full distinction, retain only part of it, or erase it.</p>
+
+<p>For an entire proposal family, the stronger notion is statistical sufficiency: there should exist a recovery channel that reconstructs every member of the family from the interface output, up to explicitly declared redundancies. Pairwise distinguishability is useful, but family-level recoverability is the more exact question.</p>
+
+<p>This remains an audit performed <em>after</em> interface formation. Accessibility is not promoted to a substance, and no metaphysical transfer of “meaning” is assumed. The calculation asks only which differences the realized channel preserves.</p>
+
+<h2>Hartle–Hawking and tunnelling as a proposal audit</h2>
+
+<p>The Hartle–Hawking and tunnelling wavefunctions provide a natural application. They are global boundary proposals, not definitions of the interface ontology. To compare them empirically, both must be evolved through the same cosmological dynamics and the same physically derived record-forming channel.</p>
+
+<p>Schematically, let $x$ label a semiclassical history and let $w_{\rm HH}(x)$ and $w_{\rm T}(x)$ be the proposal weights after conventions have been fixed. A realized observable map</p>
+
+<div class="equation">$$x\longmapsto F(x)=(A_s,n_s,r,\Omega_k,\ldots)$$</div>
+
+<p>pushes those weights forward to distributions over interface data. If $F$ is constant over a range on which the two proposals assign different weights, all observables generated by $F$ are blind to that redistribution. The difference survives empirically only in quantities whose maps remain nonconstant.</p>
+
+<p>Earlier model calculations suggest a possible pattern: standard perturbation observables may saturate across broad inflationary ranges, while residual spatial curvature could retain sensitivity in a bounded window. This is an interesting target, not an established conclusion about the real universe. It depends on the chosen minisuperspace model, boundary prescriptions, measure, dynamics, and realized observational algebra.</p>
+
+<h2>A wider connection: reconstruction from partial algebras</h2>
+
+<p>The same formal shape appears in quantum gravity and holography. A boundary subalgebra can sometimes reconstruct only a corresponding bulk region; enlarging the boundary domain enlarges what can be reconstructed. Likewise, an interface algebra determines an equivalence class of global states, and additional compatible channels refine that class. The analogy is suggestive because both are inverse problems: infer global structure from restricted quantum data.</p>
+
+<p>It would be an overclaim to identify an extension fiber with an entanglement wedge or to infer ER = EPR from the restriction formalism. The modest connection is that entanglement, algebraic access, and geometric reconstruction all ask which global distinctions are encoded in a specified subsystem. The interface framework supplies a precise language for that question even when no gravitational dual is assumed.</p>
+
+<h2>What the result does—and does not—settle</h2>
+
+<p>The framework gives a criterion for interface-relative equivalence and a calculable way to classify lost or suppressed directions. It does not select the correct cosmological boundary proposal, derive the actual late-time interface from first principles, or prove that every globally different state will eventually become observable somewhere.</p>
+
+<p>Its central discipline is simpler:</p>
+
+<blockquote>A global difference matters to a specified empirical problem exactly to the extent that it survives in, perturbs, or can later be recovered from a physically realized interface.</blockquote>
+
+<p>That turns the vague question “Are these wavefunctions really different?” into a sequence of concrete ones: Which response channel forms? Which algebra does it generate? Which proposal parameters survive restriction? How much distinguishability is retained? Which residual differences are recoverable later, permanently stranded, or merely representational?</p>
+
+<hr>
+<nav class="essay-nav"><a href="interfaces-en.html">&larr; Why interfaces?</a> &nbsp;·&nbsp; <a href="worum-es-geht-en.html">Introduction</a></nav>
+<p class="back"><a href="index.html">&larr; Back to overview</a></p>
+<footer>© 2026 Juan-Jose Gascon-Wingenbach</footer>
+
+</body>
+</html>
