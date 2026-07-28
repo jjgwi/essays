@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why interfaces?</title>
+<style>
+  :root { --ink:#1f2328; --muted:#57606a; --link:#2a5599; --rule:#e6e8eb; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 22px 96px;
+    background: #fff;
+  }
+  .back { font-size: .85rem; }
+  .back a { color: var(--link); text-decoration: none; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: .8em 0 .1em; }
+  .subtitle { color: var(--muted); font-size: 1.02rem; font-style: italic; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin: 2.1em 0 .5em; }
+  blockquote {
+    margin: 1.1em 0;
+    padding: .2em 0 .2em 1.1em;
+    border-left: 3px solid var(--rule);
+    color: #2f363d;
+    font-style: italic;
+  }
+  ul { padding-left: 1.25em; }
+  li { margin: .4em 0; }
+  em { font-style: italic; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.4em 0; }
+  .note {
+    background: #f6f8fa;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: .92rem;
+    color: #3d444d;
+    line-height: 1.6;
+  }
+  .note-title { font-weight: bold; display: block; margin-bottom: .4em; color: var(--ink); }
+  footer { margin-top: 3em; color: var(--muted); font-size: .82rem; }
+</style>
+<script>
+  window.MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$','$$']] } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<p class="back"><a href="index-en.html">&larr; Back to overview</a></p>
+
+<h1>Why interfaces?</h1>
+<p class="subtitle">A toy model in which an interface explains something that is
+not even expressible without it</p>
+
+<h2>The guiding question</h2>
+<p>A new concept earns its place in physics only if it achieves something that is
+not already achieved without it. This is exactly the test to apply to the notion
+of an <em>interface</em>. The question at stake here is deliberately modest:</p>
+<blockquote>Can an interface make a physically meaningful quantity well defined that
+is not available at all without it?</blockquote>
+<p>If so, the interface is not an arbitrarily added extra but a natural object:
+one that is needed in order to pose certain questions in the first place. This
+note shows exactly that, in a single, exactly solvable example — a <em>toy
+model</em>.</p>
+
+<h2>Why small examples mislead here</h2>
+<p>In the ordinary quantum mechanics of small systems the question is easily
+obscured. There one can always split a total system cleanly into parts, and to
+each part there belongs, quite naturally, its own state with all the usual
+quantities. An “interface” would then be merely a new name for a subsystem or a
+measuring device — nothing of its own.</p>
+<p>It becomes interesting only where this self-evident splitting <em>no longer</em>
+works. And that is precisely what happens in quantum field theory, the physics
+that describes fields and elementary particles. For a sharply bounded region of
+space, the familiar division into “inside” and “outside,” each with its own state,
+does <em>not</em> exist there. This is not a mere computational hurdle; the
+corresponding quantity is, in this situation, mathematically absent altogether.</p>
+
+<h2>The actual result</h2>
+<p>One can picture this with a measure of information — the so-called entropy of a
+subregion, roughly: “how much uncertainty is contained in this part.” For a
+sharply bounded region in field theory this quantity is not merely hard to compute
+but simply <em>not defined</em>. There is no mathematical object one could insert.</p>
+<p>Now the interface enters. If one introduces a thin transition zone between
+“inside” and “outside” — an interface with a little separation instead of a
+razor-sharp boundary — then exactly the mathematical object that was missing comes
+into being. And with it the entropy becomes an ordinary, <em>finite number</em>.</p>
+<p>The decisive point: nothing about the physics itself changes. It is the same
+total state, the same situation. What changes is only <em>through which object</em>
+one poses the partial question. Without the interface, the question “how much
+information is contained in this region?” has no answer; with the interface it has
+one — and a concrete number at that.</p>
+<blockquote>sharp boundary → quantity undefined &nbsp;&nbsp;·&nbsp;&nbsp;
+interface with transition zone → finite, well-defined quantity</blockquote>
+
+<h2>Why this is not a trick</h2>
+<p>An obvious objection is that the finite number might be a mere computational
+trick, a value one arranges for oneself by clever truncation. For simple
+approximate models this suspicion would be justified — there an infinity can always
+be defined away “by hand” through a suitable subtraction.</p>
+<p>In field theory it is different, and that is the actual point. The absence of
+the quantity there is not a computational artifact one could fix by convention, but
+has a structural, deeper-lying reason. No subtraction, however clever, creates the
+missing object. Only the interface — the transition zone — does. That is why it
+performs genuine structural work and is not merely a notation.</p>
+
+<h2>From a quantity to a measurement</h2>
+<p>One might object that an entropy is a mathematical property, not yet a
+measurement. The objection is fair — and can be answered. The very same transition
+zone makes not only the entropy well defined, but also an <em>actually
+observable</em> quantity: the distinguishability of two states, that is, the
+question of how well one can tell two possible situations apart with a single
+measurement.</p>
+<p>This distinguishability too runs, without an interface, into the same barrier as
+the entropy — it is unavailable in the sharp description. With the interface it
+becomes a finite number, and that number is exactly what a best possible single
+measurement would achieve. In this sense the interface makes not merely a formula
+writable, but a measurement computable in the first place.</p>
+
+<h2>What follows — and what does not</h2>
+<p>The conclusion is narrow and, for that, robust. In this exactly solvable
+example, the interface is no arbitrary accessory. It is the object without which a
+particular physical question has no answer and with which it acquires one. This
+shows — rather than merely asserts — that interfaces can explain something the same
+model cannot explain without them.</p>
+<p>Nothing more is claimed here, deliberately. It is a single model, not a general
+theorem about all physical interfaces. It says nothing about whether an interface
+“creates reality” or is philosophically fundamental. And it rests on the choice of
+a particular transition zone, which is natural but not unique. The value of the
+example lies precisely in its modesty: it shows, in one clear case, that the notion
+of an interface earns its place.</p>
+
+<hr>
+
+<div class="note">
+<span class="note-title">What is not claimed here</span>
+It is not claimed that this result holds for all physical interfaces; that the
+interface creates reality or is physically fundamental; or that the transition zone
+considered is the only possible one. This is a single, exactly solvable toy model
+within existing physics. Its sole, and for that cleanly established, purpose is to
+show that an interface can make a physical quantity well defined that is not
+available without it.
+</div>
+
+<p class="back" style="margin-top:2.5em"><a href="index-en.html">&larr; Back to overview</a></p>
+
+<footer>© 2026 Juan-José Gascón-Wingenbach</footer>
+
+</body>
+</html>

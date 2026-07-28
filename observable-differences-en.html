@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Which differences are observable?</title>
+<style>
+  :root { --ink:#1f2328; --muted:#57606a; --link:#2a5599; --rule:#e6e8eb; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 17px;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 22px 96px;
+    background: #fff;
+  }
+  .back { font-size: .85rem; }
+  .back a { color: var(--link); text-decoration: none; }
+  h1 { font-size: 1.75rem; line-height: 1.2; margin: .8em 0 .1em; }
+  .subtitle { color: var(--muted); font-size: 1.02rem; font-style: italic; margin-top: 0; }
+  h2 { font-size: 1.1rem; margin: 2.1em 0 .5em; }
+  blockquote {
+    margin: 1.1em 0;
+    padding: .2em 0 .2em 1.1em;
+    border-left: 3px solid var(--rule);
+    color: #2f363d;
+    font-style: italic;
+  }
+  ul { padding-left: 1.25em; }
+  li { margin: .4em 0; }
+  em { font-style: italic; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.4em 0; }
+  .note {
+    background: #f6f8fa;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: .92rem;
+    color: #3d444d;
+    line-height: 1.6;
+  }
+  .note-title { font-weight: bold; display: block; margin-bottom: .4em; color: var(--ink); }
+  footer { margin-top: 3em; color: var(--muted); font-size: .82rem; }
+</style>
+<script>
+  window.MathJax = { tex: { inlineMath: [['$', '$']], displayMath: [['$$','$$']] } };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<p class="back"><a href="index-en.html">&larr; Back to overview</a></p>
+
+<h1>Which differences are observable?</h1>
+<p class="subtitle">When two candidate wavefunctions of the universe are
+distinguishable to us at all</p>
+
+<h2>The starting point</h2>
+<p>For the early universe there are several proposals for which quantum state
+describes its beginning. Two well-known ones carry the names of their authors: the
+<em>Hartle–Hawking</em> proposal and the <em>tunnelling</em> proposal. Both are
+serious candidates, and for decades it has been debated which is the right one.</p>
+<p>The obvious question would be: are these two states different at all? This note
+asks a different, more precise question. For even if two proposals differ
+mathematically, it does not yet follow that we can ever <em>measure</em> the
+difference. The real question is therefore:</p>
+<blockquote>Which differences between two candidate wavefunctions survive the long
+path down to the quantities we can actually observe today — and which are lost
+along the way?</blockquote>
+
+<h2>Why some differences are lost</h2>
+<p>The reason lies in the way we observe the universe. We have no access to the
+complete quantum state. What reaches us is a few measurable quantities — the
+strength of the density fluctuations in the microwave background, their
+distribution across different scales, or the curvature of space.</p>
+<p>The path from the original state to these measured quantities is a kind of
+filter. Each proposal distributes its “weight” over different possible histories of
+the universe, and this filter maps all those histories onto the few observable
+numbers. The decisive observation is: this filter is not invertible. Different
+prehistories can lead to exactly the same measured values.</p>
+
+<h2>The criterion</h2>
+<p>This is where the actual result of this note lies, and it takes the form of a
+clear criterion. It can be put roughly like this:</p>
+<blockquote>If an observable quantity has the same value across a whole range of
+possible prehistories, then it is <em>blind</em> to how two proposals distribute
+their weight within that range.</blockquote>
+<p>Put differently: if two proposals differ only where the observable is constant
+anyway, then they yield exactly the same prediction — the difference is invisible
+to that measurement, not because it does not exist, but because the observation
+does not resolve it. It becomes visible only once one adds a further quantity that
+is <em>not</em> constant in that region.</p>
+<p>This criterion is the robust, generally valid core. For any observable quantity
+it says whether or not it can distinguish two proposals — independently of which
+concrete model one considers.</p>
+
+<h2>A concrete suspicion — cautiously stated</h2>
+<p>In a simple, worked-through model case a striking pattern appears: part of the
+standard observables of cosmology — the strength and distribution of the density
+fluctuations, say — seems to be “saturated” over broad ranges, that is, constant
+and hence blind to the difference between the proposals. A single quantity, on the
+other hand, the residual curvature of space, might remain sensitive within a
+bounded window.</p>
+<p>That would be, if it holds up, a remarkably sharp picture: the most-measured
+quantities of cosmology would then carry no information at all about the choice
+between the two proposals, and a single quantity would carry it. But I state this
+point deliberately only as a <em>suspicion</em> and as a target for a more careful
+calculation — not as an established result. It depends on the assumptions of the
+particular model. What is robust is the criterion of the previous section; which
+quantity carries the difference in the actual universe is not thereby settled.</p>
+
+<h2>What this means</h2>
+<p>The dispute “Hartle–Hawking or tunnelling?” thereby turns into a sharper and
+answerable question. Instead of asking whether the two states are different, one
+asks: at which point, in which measured quantity, does their difference survive the
+path down to us? Where the answer is “nowhere,” the two proposals are — for these
+observations — not competing physical theories but indistinguishable. Where it is
+“here,” one has identified a genuine, measurable prediction.</p>
+<p>This is not a new cosmological model and not a resolution of the old dispute. It
+is a tool that sorts the dispute: it separates the differences that can become
+observational data from those that in principle cannot.</p>
+
+<hr>
+
+<div class="note">
+<span class="note-title">What is not claimed here</span>
+It is not claimed that the dispute between the two proposals is settled; that
+either one is correct; or that — as an established result — the curvature carries
+the whole difference in the actual universe. What is robust is only the criterion
+that determines, for any measured quantity, whether it can distinguish two
+proposals. The statement about curvature is a model-dependent suspicion and a
+target for a more careful calculation, not a result.
+</div>
+
+<p class="back" style="margin-top:2.5em"><a href="index-en.html">&larr; Back to overview</a></p>
+
+<footer>© 2026 Juan-José Gascón-Wingenbach</footer>
+
+</body>
+</html>
