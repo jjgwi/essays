@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Why Some Differences Matter — Essay 3: What the Framework Establishes</title>
+
+  <style>
+    body {
+      max-width: 760px;
+      margin: 2em auto;
+      font-family: Georgia, serif;
+      line-height: 1.7;
+      color: #222;
+      padding: 0 1em;
+      background: #fff;
+    }
+
+    h1 {
+      font-size: 1.75em;
+      margin-bottom: 0.2em;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 2em;
+    }
+
+    h2 {
+      font-size: 1.25em;
+      margin-top: 2.4em;
+    }
+
+    h3 {
+      font-size: 1.05em;
+      margin-top: 1.8em;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1.5em 0;
+      font-size: 0.95em;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.55em 0.8em;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f4f4f4;
+    }
+
+    .claim {
+      border-left: 3px solid #444;
+      padding-left: 1em;
+      margin: 1.5em 0;
+      color: #333;
+    }
+
+    .note {
+      background: #f7f7f7;
+      border-left: 3px solid #bbb;
+      padding: 0.8em 1em;
+      margin: 1.5em 0;
+    }
+
+    .nav {
+      margin-top: 3em;
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    code {
+      font-family: "Courier New", monospace;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Why Some Differences Matter</h1>
+<p class="subtitle">From Darwin's Finches to Quantum Cosmology</p>
+
+<p><a href="index.html">Home</a></p>
+
+<hr>
+
+<h2>Essay III: What the Framework Establishes</h2>
+
+<p>
+  The previous essay introduced the cosmological setting. Quantum cosmology may
+  supply many possible branch histories. Conditioning proposals tell us how
+  those branches should be weighted when making predictions. Volume weighting,
+  volume averaging, and top-down replication are different ways of doing this.
+</p>
+
+<p>
+  This essay asks the next question:
+</p>
+
+<div class="claim">
+  Once different conditioning proposals are written down, how do we tell whether
+  their differences actually matter?
+</div>
+
+<p>
+  The framework does not choose the correct proposal. It does not solve the
+  cosmological measure problem. Its contribution is more specific: it provides a
+  way to compare proposals by the probability distributions they induce over
+  branches and observable branch properties.
+</p>
+
+<h2>Prediction Space</h2>
+
+<p>
+  Suppose a model gives three possible branches. A probability assignment over
+  those branches might be:
+</p>
+
+<div class="note">
+  <code>(0.90, 0.09, 0.01)</code>
+</div>
+
+<p>
+  This means that the first branch receives most of the probability, the second
+  receives some, and the third receives very little.
+</p>
+
+<p>
+  Another proposal might assign:
+</p>
+
+<div class="note">
+  <code>(0.00, 0.00, 1.00)</code>
+</div>
+
+<p>
+  which means the third branch dominates.
+</p>
+
+<p>
+  The set of all such probability assignments is the space of predictions. For
+  three branches, this space can be pictured as a triangle. Each corner is a
+  prediction where one branch receives all the probability. Points inside the
+  triangle spread probability among several branches.
+</p>
+
+<p>
+  The framework compares conditioning proposals by asking where they land in
+  this prediction space.
+</p>
+
+<h2>Reach</h2>
+
+<p>
+  Reach measures how much of a formal difference between proposals survives as
+  a difference in predictions.
+</p>
+
+<p>
+  If two proposals are written differently but produce the same branch
+  distribution, then their Reach is small, or even zero, for that branch family.
+  They may differ as formulas, but the difference is invisible in the resulting
+  predictions.
+</p>
+
+<p>
+  If two proposals move probability to different branches or different
+  observable properties, their Reach is large. Then the formal difference has
+  survived into prediction.
+</p>
+
+<div class="claim">
+  Reach asks not whether two proposals are different on paper, but whether they
+  make different predictions.
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Reach reformulation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Are the formulas different?</td>
+      <td>Do they produce different branch distributions?</td>
+    </tr>
+    <tr>
+      <td>Which proposal is more natural?</td>
+      <td>Where does each proposal land in prediction space?</td>
+    </tr>
+    <tr>
+      <td>Can observers tell them apart?</td>
+      <td>Does the difference survive in observable branch properties?</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>The Audit Procedure</h2>
+
+<p>
+  The framework can be summarized as an audit procedure.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Step</th>
+      <th>Question</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. Branches</td>
+      <td>What physically meaningful branch histories are being compared?</td>
+    </tr>
+    <tr>
+      <td>2. Prescriptions</td>
+      <td>How does each conditioning proposal weight those branches?</td>
+    </tr>
+    <tr>
+      <td>3. Distributions</td>
+      <td>What probability distribution does each proposal produce?</td>
+    </tr>
+    <tr>
+      <td>4. Distance</td>
+      <td>How far apart are those distributions?</td>
+    </tr>
+    <tr>
+      <td>5. Observables</td>
+      <td>Does the difference remain visible after coarse-graining to observable properties?</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  This procedure is deliberately modest. It does not decide which proposal is
+  true. It decides whether two proposals make distinguishable predictions on a
+  specified branch family.
+</p>
+
+<h2>Three Ways Differences Can Disappear or Survive</h2>
+
+<p>
+  The mathematical notes describe three mechanisms that shape prediction space.
+  In this essay they can be stated plainly.
+</p>
+
+<h3>1. Quotienting</h3>
+
+<p>
+  Some parts of a proposal may be invisible on a given branch family. If two
+  formulas assign the same weights to the branches being compared, they produce
+  the same prediction, even if they differ elsewhere.
+</p>
+
+<h3>2. Capacity</h3>
+
+<p>
+  Some response rules may not be able to support many alternatives at once. In
+  prediction space, this means they can reach only lower-dimensional regions,
+  such as edges or corners rather than the full interior.
+</p>
+
+<h3>3. Concentration</h3>
+
+<p>
+  Some families of prescriptions formally have many possibilities but still
+  concentrate near one branch. Volume weighting is an example: if one branch has
+  much larger volume than the others, steep volume weighting can push the
+  prediction close to that branch's corner.
+</p>
+
+<p>
+  These mechanisms are background tools. The main application below concerns
+  the third kind of effect: how volume weighting and top-down replication move
+  probability through prediction space.
+</p>
+
+<h2>The Live Application</h2>
+
+<p>
+  The live application is the dispute between volume weighting, volume
+  averaging, and Hartle-Hertog top-down replication.
+</p>
+
+<p>
+  The previous essay explained the vocabulary. Here we ask what the framework
+  establishes about the comparison.
+</p>
+
+<p>
+  There are two familiar limiting regimes.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Regime</th>
+      <th>Top-down behaviour</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data rare in every branch</td>
+      <td>Top-down weighting is close to volume weighting</td>
+    </tr>
+    <tr>
+      <td>Data common in every branch</td>
+      <td>Top-down weighting is close to bottom-up or volume-averaged weighting</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  These two statements are not the new point. They are the expected limiting
+  behaviours. The new point concerns the mixed regime.
+</p>
+
+<h2>The Mixed Regime</h2>
+
+<p>
+  The mixed regime occurs when data like ours are rare in some branches but
+  already saturated in others. That is, some branches provide too few
+  opportunities for the data to appear easily, while others provide so many
+  opportunities that occurrence is almost guaranteed.
+</p>
+
+<p>
+  It is natural to picture top-down weighting as a compromise between two
+  endpoints: volume weighting on one side and bottom-up or volume-averaged
+  weighting on the other.
+</p>
+
+<p>
+  The framework shows that this picture can be wrong.
+</p>
+
+<div class="claim">
+  In the mixed regime, top-down replication can become a third prediction,
+  far from both volume weighting and the bottom-up or volume-averaged baseline.
+</div>
+
+<p>
+  The reason is that top-down weighting favours branches near the crossover:
+  branches with enough replication opportunities to matter, but not so many
+  that the occurrence factor has completely saturated.
+</p>
+
+<h2>A Three-Branch Example</h2>
+
+<p>
+  Consider three branches.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Branch</th>
+      <th>Prior weight</th>
+      <th>Replication opportunities</th>
+      <th>Favoured by</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Branch 1</td>
+      <td>Large</td>
+      <td>Small</td>
+      <td>Bottom-up weighting</td>
+    </tr>
+    <tr>
+      <td>Branch 2</td>
+      <td>Medium</td>
+      <td>Large but not overwhelming</td>
+      <td>Top-down crossover</td>
+    </tr>
+    <tr>
+      <td>Branch 3</td>
+      <td>Small</td>
+      <td>Huge</td>
+      <td>Volume weighting</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Bottom-up weighting prefers Branch 1, because it begins with the largest prior
+  probability. Volume weighting prefers Branch 3, because its replication count
+  is enormous. But top-down replication can prefer Branch 2, because that branch
+  lies near the transition between rarity and saturation.
+</p>
+
+<p>
+  A concrete numerical example uses prior weights:
+</p>
+
+<div class="note">
+  <code>(0.90, 0.09, 0.01)</code>
+</div>
+
+<p>
+  and replication opportunities:
+</p>
+
+<div class="note">
+  <code>(1, 10<sup>4</sup>, 10<sup>8</sup>)</code>
+</div>
+
+<p>
+  In this example, the bottom-up rule mostly selects the first branch, volume
+  weighting mostly selects the third, and the regulated top-down rule can put
+  most of its weight on the second.
+</p>
+
+<div class="claim">
+  The branch favoured by top-down replication need not be favoured by either
+  endpoint prescription.
+</div>
+
+<h2>What the Result Means</h2>
+
+<p>
+  The result does not show that top-down replication is correct. It does not
+  show that volume weighting or volume averaging is wrong. It shows something
+  narrower and more diagnostic.
+</p>
+
+<p>
+  The top-down prescription is not merely a compromise between two known poles.
+  It can occupy a different region of prediction space. In suitable branch
+  families, it can be far from both bottom-up weighting and volume weighting at
+  the same time.
+</p>
+
+<p>
+  That means the dispute is not one-dimensional. It is not enough to ask whether
+  we should move toward or away from volume weighting. We must also ask whether
+  replication regulation identifies branches that neither endpoint favours.
+</p>
+
+<h2>What to Check in a Real Cosmological Model</h2>
+
+<p>
+  The framework identifies the structure to look for.
+</p>
+
+<div class="claim">
+  Look for branch families where prior weight decreases while replication
+  opportunities increase.
+</div>
+
+<p>
+  In such a family, bottom-up weighting favours the high-prior branches, volume
+  weighting favours the high-replication branches, and top-down replication may
+  favour intermediate crossover branches.
+</p>
+
+<p>
+  Whether realistic inflationary cosmology contains such branch families is a
+  question for detailed model building. The framework does not answer it by
+  itself. It says what comparison must be made.
+</p>
+
+<h2>What the Framework Does Not Establish</h2>
+
+<p>
+  The framework does not solve the cosmological measure problem. It does not
+  select the correct conditioning proposal. It does not eliminate the need for
+  assumptions about observers, data, self-location, or xerographic
+  distributions.
+</p>
+
+<p>
+  It also does not explain why decoherence produces the particular experienced
+  world we find ourselves in. Decoherence supplies a branch structure. The
+  framework compares probability assignments on that structure.
+</p>
+
+<p>
+  So the framework is not a complete theory of quantum cosmology. It is an audit
+  tool.
+</p>
+
+<h2>What the Framework Does Establish</h2>
+
+<p>
+  The framework establishes a sharper way to compare proposals.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>It does not ask only...</th>
+      <th>It asks instead...</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Are the formulas different?</td>
+      <td>Do they produce different branch distributions?</td>
+    </tr>
+    <tr>
+      <td>Which proposal sounds more natural?</td>
+      <td>Where does each proposal land in prediction space?</td>
+    </tr>
+    <tr>
+      <td>Does top-down weighting have the right limiting behaviour?</td>
+      <td>What happens in the mixed regime between the limits?</td>
+    </tr>
+    <tr>
+      <td>Does the framework solve the measure problem?</td>
+      <td>No. It provides a diagnostic for comparing candidate measures.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  The central lesson is:
+</p>
+
+<div class="claim">
+  A conditioning proposal matters scientifically only insofar as it changes the
+  distribution of observable branch predictions.
+</div>
+
+<p>
+  Some formal differences disappear. Some survive. Some appear only in special
+  regimes. The purpose of the framework is to distinguish these cases.
+</p>
+
+<h2>Returning to the Finches</h2>
+
+<p>
+  Darwin did not discover that finches differ. Anyone could see that. The
+  scientific achievement was to understand which differences mattered under
+  which environmental pressures.
+</p>
+
+<p>
+  The cosmological case is far more abstract, but the logic is similar. We
+  already have different conditioning proposals. We already have possible branch
+  histories. The question is which differences between proposals survive into
+  predictions about what observers can see.
+</p>
+
+<p>
+  That is what Reach is designed to measure.
+</p>
+
+<div class="claim">
+  The important step is from “these formulas differ” to “these formulas make
+  different observable predictions.”
+</div>
+
+<p>
+  That is what the framework establishes.
+</p>
+
+<div class="nav">
+  <a href="difference.html">Previous</a> |
+  <a href="index.html">Home</a> |
+  <a href="inertia-what-this-is-about.html">Next</a>
+</div>
+
+</body>
+</html>
